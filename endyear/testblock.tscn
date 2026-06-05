@@ -1,7 +1,0 @@
-[gd_scene format=3 uid="uid://d2r8iep0urlt8"]
-
-[ext_resource type="Script" uid="uid://co2eed0xtj62y" path="res://testblock.gd" id="1_pyulb"]
-
-[node name="Node3D" type="Node3D" unique_id=199949998]
-transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
-script = ExtResource("1_pyulb")
