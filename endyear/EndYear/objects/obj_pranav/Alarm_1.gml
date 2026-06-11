@@ -1,0 +1,10 @@
+player = obj_player;
+player_x = player.x;
+sprite_index = spr_pranav;
+move = false;
+instance_create_layer(player_x, 530, "Instances", textBox_obj);
+instance_create_layer(player_x, 530, "Instances", pranavText_obj);
+instance_create_layer(player_x + 50, 60, "Instances", cleaningUpUpUp_obj);
+textBox_obj.alarm[0] = 120;
+pranavText_obj.alarm[0] = 120;
+player.alarm[1] = 120;

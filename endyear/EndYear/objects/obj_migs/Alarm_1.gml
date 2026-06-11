@@ -1,0 +1,10 @@
+player = obj_player;
+player_x = player.x;
+sprite_index = spr_migs;
+move = false;
+instance_create_layer(player_x, 530, "Instances", textBox_obj);
+instance_create_layer(player_x, 530, "Instances", migsText_obj);
+instance_create_layer(player_x - 50, 60, "Instances", chemTest_obj);
+textBox_obj.alarm[0] = 120;
+migsText_obj.alarm[0] = 120;
+player.alarm[1] = 120;

@@ -1,0 +1,16 @@
+canAttack = false;
+nextInteraction = 1500;
+stepped = 0;
+depth = -5;
+vilOnScreen = false;
+hasWifi = false;
+hasPencil = false;
+hasCleaning = false;
+hasShower = false;
+hasChem = false;
+hasPolymorphisim = false;
+hp = 200;
+canMove =  true;
+instance_create_layer(x, y + 70, "Instances", healthPlayer);
+mrsenText1_obj.alarm[0] = 120;
+textBox_obj.alarm[0] = 120;

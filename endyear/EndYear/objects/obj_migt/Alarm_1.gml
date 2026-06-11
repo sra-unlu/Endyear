@@ -1,0 +1,10 @@
+player = obj_player;
+player_x = player.x;
+sprite_index = spr_migt;
+move = false;
+instance_create_layer(player_x, 530, "Instances", textBox_obj);
+instance_create_layer(player_x, 530, "Instances", migtText_obj);
+instance_create_layer(player_x + 150, 60, "Instances", showerAttack_obj);
+textBox_obj.alarm[0] = 120;
+migtText_obj.alarm[0] = 120;
+player.alarm[1] = 120;

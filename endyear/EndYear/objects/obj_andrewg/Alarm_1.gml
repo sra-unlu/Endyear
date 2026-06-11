@@ -1,0 +1,10 @@
+player = obj_player;
+player_x = player.x;
+sprite_index = spr_andrewg;
+move = false;
+instance_create_layer(player_x, 530, "Instances", textBox_obj);
+instance_create_layer(player_x, 530, "Instances", andrewgText_obj);
+instance_create_layer(player_x + 250, 60, "Instances", polymorphisimUnit_obj);
+textBox_obj.alarm[0] = 120;
+andrewgText_obj.alarm[0] = 120;
+player.alarm[1] = 120;
