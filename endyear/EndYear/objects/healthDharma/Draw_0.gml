@@ -4,4 +4,4 @@ if (player_hp > 66){
 	draw_set_colour(c_yellow);
 } else{
 	draw_set_colour(c_red);
-} draw_rectangle(x, y, x+player_hp, y+20, false);
+} draw_rectangle(x, y, x + (player_hp * 110)/100, y+20, false);

@@ -4,5 +4,5 @@ player_canAttack = player.canAttack;
 player_canMove = player.canAttack;
 player_vilOnScreen = player.vilOnScreen;
 hp = 100;
-instance_create_layer(x, y + 70, "Instances", healthZohar);
-instance_create_layer(x, y + 70, "Instances", healthBarBorder_obj);
+instance_create_layer(x + 5, y, "Instances", healthZohar);
+instance_create_layer(x, y - 5, "Instances", healthBarBorder_obj);

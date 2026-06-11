@@ -11,6 +11,7 @@ hasChem = false;
 hasPolymorphisim = false;
 hp = 200;
 canMove =  true;
-instance_create_layer(x, y + 70, "Instances", healthPlayer);
+instance_create_layer(x + 5, y, "Instances", healthPlayer);
+instance_create_layer(x, y - 5, "Instances", healthBarBorderPlayer_obj);
 mrsenText1_obj.alarm[0] = 120;
 textBox_obj.alarm[0] = 120;
