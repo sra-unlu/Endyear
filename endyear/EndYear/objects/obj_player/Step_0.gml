@@ -70,30 +70,30 @@ if(x > nextInteraction){
 } 
 
 if(canAttack){
-	if(hasPolymorphisim && keyboard_check(ord("6"))){
-		instance_create_layer(x + 250, y - 20, "Instances", units_obj);
-		instance_create_layer(x + 250, y, "Instances", units_obj);
-		instance_create_layer(x + 250, y + 20, "Instances", units_obj);
-	} if(hasShower && keyboard_check(ord("5"))){
-		instance_create_layer(x + 250, y - 20, "Instances", showers_obj);
-		instance_create_layer(x + 250, y, "Instances", showers_obj);
-		instance_create_layer(x + 250, y + 20, "Instances", showers_obj);
-	} if(hasCleaning && keyboard_check(ord("4"))){
-		instance_create_layer(x + 250, y - 20, "Instances", cleaning_obj);
-		instance_create_layer(x + 250, y, "Instances", cleaning_obj);
-		instance_create_layer(x + 250, y + 20, "Instances", cleaning_obj);
-	} if(hasChem && keyboard_check(ord("3"))){
-		instance_create_layer(x + 250, y - 20, "Instances", tests_obj);
-		instance_create_layer(x + 250, y, "Instances", tests_obj);
-		instance_create_layer(x + 250, y + 20, "Instances", tests_obj);
-	} if(hasWifi && keyboard_check(ord("2"))){
-		instance_create_layer(x + 250, y - 20, "Instances", wifis_obj);
-		instance_create_layer(x + 250, y, "Instances", wifis_obj);
-		instance_create_layer(x + 250, y + 20, "Instances", wifis_obj);
-	} if(hasPencil && keyboard_check(ord("1"))){
-		instance_create_layer(x + 250, y - 20, "Instances", pencils_obj);
-		instance_create_layer(x + 250, y, "Instances", pencils_obj);
-		instance_create_layer(x + 250, y + 20, "Instances", pencils_obj);
+	if(hasPolymorphisim && keyboard_check(ord("y"))){
+		instance_create_depth(x + 250, y + 40, -3000, "Instances", units_obj);
+		instance_create_depth(x + 250, y, -3000, "Instances", units_obj);
+		instance_create_depth(x + 250, y + 20, -3000, "Instances", units_obj);
+	} if(hasShower && keyboard_check(ord("t"))){
+		instance_create_deth(x + 250, y + 40, -3000, "Instances", showers_obj);
+		instance_create_depth(x + 250, y, -3000, "Instances", showers_obj);
+		instance_create_depth(x + 250, y + 20, -3000, "Instances", showers_obj);
+	} if(hasCleaning && keyboard_check(ord("r"))){
+		instance_create_depth(x + 250, y + 40, -3000, "Instances", cleaning_obj);
+		instance_create_depth(x + 250, y, -3000, "Instances", cleaning_obj);
+		instance_create_depth(x + 250, y + 20, -3000, "Instances", cleaning_obj);
+	} if(hasChem && keyboard_check(ord("e"))){
+		instance_create_depth(x + 250, y + 40, -3000, "Instances", tests_obj);
+		instance_create_depth(x + 250, y, -3000, "Instances", tests_obj);
+		instance_create_depth(x + 250, y + 20, -3000, "Instances", tests_obj);
+	} if(hasWifi && keyboard_check(ord("w"))){
+		instance_create_depth(x + 250, y, -3000, "Instances", wifis_obj);
+		instance_create_depth(x + 250, y + 40, -3000, "Instances", wifis_obj);
+		instance_create_depth(x + 250, y + 20, -3000, "Instances", wifis_obj);
+	} if(hasPencil && keyboard_check(ord("q"))){
+		instance_create_depth(x + 250, y, -3000, "Instances", pencils_obj);
+		instance_create_depth(x + 250, y + 20, -3000, "Instances", pencils_obj);
+		instance_create_depth(x + 250, y + 40, -3000, "Instances", pencils_obj);
 	} canAttack = false;
 }
 
